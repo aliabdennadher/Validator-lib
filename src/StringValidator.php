@@ -23,8 +23,8 @@ class StringValidator
      *
      * @throws \Exception
      */
-    public static function lengthIsEqualTo($string, $length)
-    {
+    public static function lengthIsEqualTo($string, $length){
+
         if (!is_string($string) || !is_int($length)) {
             throw new \Exception('$string must be a string and $length an integer');
         }else {
@@ -44,8 +44,8 @@ class StringValidator
      *
      * @throws \Exception
      */
-    public static function lengthIsSuperiorTo($string, $limit)
-    {
+    public static function lengthIsSuperiorTo($string, $limit){
+
         if (!is_string($string) || !is_int($limit)) {
             throw new \Exception('$string must be a string and $limit an integer');
         }else {
@@ -66,8 +66,8 @@ class StringValidator
      *
      * @throws \Exception
      */
-    public static function lengthIsInferiorTo($string, $limit)
-    {
+    public static function lengthIsInferiorTo($string, $limit){
+
         if (!is_string($string) || !is_int($limit)) {
             throw new \Exception('$string must be a string and $limit an integer');
         }else {
@@ -89,8 +89,8 @@ class StringValidator
      *
      * @throws \Exception
      */
-    public static function lengthBetween($string, $min, $max)
-    {
+    public static function lengthBetween($string, $min, $max){
+
         if (!is_string($string) || !is_int($min) || !is_int($max)) {
             throw new \Exception('$string must be a string and $min / $max an integer');
         }else {
@@ -114,8 +114,8 @@ class StringValidator
      *
      * @throws \Exception
      */
-    public static function noWhiteSpaceBeginAndEnd($string)
-    {
+    public static function noWhiteSpaceBeginAndEnd($string){
+
         if (!is_string($string)) {
             throw new \Exception('$string must be a string');
         }else {
@@ -136,8 +136,8 @@ class StringValidator
      *
      * @throws \Exception
      */
-    public static function noWhiteSpace($string)
-    {
+    public static function noWhiteSpace($string){
+
         if (!is_string($string)) {
             throw new \Exception('$string must be a string');
         }else {

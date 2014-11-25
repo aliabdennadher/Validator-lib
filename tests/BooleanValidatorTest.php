@@ -14,13 +14,13 @@ use AB\Validator;
  * Class BooleanValidatorTest
  * @package Tests\JB\Validator
  */
-class BooleanValidatorTest extends \PHPUnit_Framework_TestCase
-{
+class BooleanValidatorTest extends \PHPUnit_Framework_TestCase{
+
     /**
      *
      */
-    public function testIsTrue()
-    {
+    public function testIsTrue(){
+
         $boolean = true;
         $test = Validator\BooleanValidator::isTrue($boolean);
 
@@ -30,8 +30,8 @@ class BooleanValidatorTest extends \PHPUnit_Framework_TestCase
     /**
      *
      */
-    public function testIsFalse()
-    {
+    public function testIsFalse(){
+
         $boolean = false;
         $test = Validator\BooleanValidator::isFalse($boolean);
 

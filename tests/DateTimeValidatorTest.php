@@ -10,7 +10,7 @@ namespace Tests\AB\Validator;
 
 use AB\Validator;
 
-class DateTimeValidatorTest
-{
+class DateTimeValidatorTest{
+
 
 } 

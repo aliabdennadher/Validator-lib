@@ -14,13 +14,13 @@ use AB\Validator;
  * Class IntegerValidatorTest
  * @package Tests\AB\Validator
  */
-class IntegerValidatorTest extends \PHPUnit_Framework_TestCase
-{
+class IntegerValidatorTest extends \PHPUnit_Framework_TestCase{
+
     /**
      *
      */
-    public function testIsEqual()
-    {
+    public function testIsEqual(){
+
         $a = $b = 2;
         $expected = true;
         $test = Validator\IntegerValidator::isEqual($a, $b);
@@ -31,8 +31,8 @@ class IntegerValidatorTest extends \PHPUnit_Framework_TestCase
     /**
      *
      */
-    public function testIsSuperior()
-    {
+    public function testIsSuperior(){
+
         $a = 10;
         $b = 5;
         $expected = true;
@@ -45,8 +45,8 @@ class IntegerValidatorTest extends \PHPUnit_Framework_TestCase
     /**
      *
      */
-    public function  testIsInferior()
-    {
+    public function  testIsInferior(){
+
         $a = 5;
         $b = 10;
         $expected = true;
@@ -59,8 +59,8 @@ class IntegerValidatorTest extends \PHPUnit_Framework_TestCase
     /**
      *
      */
-    public function testIsBetween()
-    {
+    public function testIsBetween(){
+
         $min = 1;
         $max = 10;
         $nb = 5;
@@ -74,8 +74,8 @@ class IntegerValidatorTest extends \PHPUnit_Framework_TestCase
     /**
      *
      */
-    public function testIsNegative()
-    {
+    public function testIsNegative(){
+
         $nb = -5;
         $expected = true;
 
@@ -87,8 +87,8 @@ class IntegerValidatorTest extends \PHPUnit_Framework_TestCase
     /**
      *
      */
-    public function testIsPositive()
-    {
+    public function testIsPositive(){
+
         $nb = 5;
         $expected = true;
 
