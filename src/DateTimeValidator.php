@@ -1,9 +1,9 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Razor
+ * User: Abdennadher
  * Date: 23/11/14
- * Time: 00:52
+ * Time: 12:30
  */
 
 namespace JB\Validator;
