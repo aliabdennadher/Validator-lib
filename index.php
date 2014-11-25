@@ -10,5 +10,5 @@ require __DIR__.'/vendor/autoload.php';
 
 $test = 'allomonsieurmadame';
 
-$validation = \JB\Validator\StringValidator::noWhiteSpace($test);
+$validation = \AB\ValidatorLib\StringValidator::noWhiteSpace($test);
 var_dump($validation);
