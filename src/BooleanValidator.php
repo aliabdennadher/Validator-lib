@@ -23,7 +23,6 @@ class BooleanValidator
      * @throws \Exception
      */
     public static function isTrue($boolean){
-
         if (!is_bool($boolean)) {
             throw new \Exception('$boolean must be a boolean');
         }else {
@@ -43,7 +42,6 @@ class BooleanValidator
      * @throws \Exception
      */
     public static function isFalse($boolean){
-
         if (!is_bool($boolean)) {
             throw new \Exception('$boolean must be a boolean');
         }else {

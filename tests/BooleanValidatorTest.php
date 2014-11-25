@@ -15,23 +15,19 @@ use AB\Validator;
  * @package Tests\JB\Validator
  */
 class BooleanValidatorTest extends \PHPUnit_Framework_TestCase{
-
     /**
      *
      */
     public function testIsTrue(){
-
         $boolean = true;
         $test = Validator\BooleanValidator::isTrue($boolean);
 
         $this->assertEquals($boolean, $test);
     }
-
     /**
      *
      */
     public function testIsFalse(){
-
         $boolean = false;
         $test = Validator\BooleanValidator::isFalse($boolean);
 

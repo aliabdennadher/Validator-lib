@@ -12,5 +12,4 @@ use AB\Validator;
 
 class DateTimeValidatorTest{
 
-
 } 

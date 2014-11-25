@@ -13,7 +13,6 @@ use AB\Validator;
 class StringValidatorTest extends \PHPUnit_Framework_TestCase
 {
     public function testLengthIsEqualTo(){
-
         $string = 'ceci est mon texte de test';
         $expected = mb_strlen($string);
 
@@ -21,7 +20,6 @@ class StringValidatorTest extends \PHPUnit_Framework_TestCase
         $this->assertTrue($test);
     }
     public function testLengthIsSuperiorTo(){
-
         $string = 'test';
         $nb = 3;
 
@@ -29,7 +27,6 @@ class StringValidatorTest extends \PHPUnit_Framework_TestCase
         $this->assertTrue($test);
     }
     public function testLengthIsInferiorTo(){
-
         $string = 'test';
         $nb = 10;
 
@@ -37,7 +34,6 @@ class StringValidatorTest extends \PHPUnit_Framework_TestCase
         $this->assertTrue($test);
     }
     public function testLengthBetween(){
-
         $string = 'test';
         $min = 1;
         $max = 10;
@@ -46,7 +42,6 @@ class StringValidatorTest extends \PHPUnit_Framework_TestCase
         $this->assertTrue($test);
     }
     public function testNoWhiteSpaceBeginAndEnd(){
-
         $string = 'No space';
 
         $test = Validator\StringValidator::noWhiteSpaceBeginAndEnd($string);
@@ -54,7 +49,6 @@ class StringValidatorTest extends \PHPUnit_Framework_TestCase
         $this->assertTrue($test);
     }
     public function testNoWhiteSpace(){
-
         $string = 'noSpaceHere';
 
         $test = Validator\StringValidator::noWhiteSpace($string);

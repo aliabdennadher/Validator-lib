@@ -13,18 +13,14 @@ class DateTimeValidator
 {
     public static function isMajor($date){
 
-
     }
     public static function isMinor($date){
-
 
     }
     public static function isYear($date){
 
-
     }
     public static function getTimeTo($date){
-
 
     }
 } 
