@@ -113,7 +113,7 @@ class IntegerValidator
     public static function isNegative($nb)
     {
         if (!is_int($nb)) {
-            throw new \Exception('$nb must be an integer');
+            throw new \Exception('$nb must be ');
         }else {
             if (0 >= (int)$nb) {
                 return true;
@@ -133,7 +133,7 @@ class IntegerValidator
     public static function isPositive($nb)
     {
         if (!is_int($nb)) {
-            throw new \Exception('$nb must be an integer');
+            throw new \Exception('$nb must be ');
         }else {
             if (0 <= (int)$nb) {
                 return true;
