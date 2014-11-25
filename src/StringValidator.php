@@ -43,27 +43,8 @@ class StringValidator
      *
      * @throws \Exception
      */
-    public static function lengthIsSuperiorTo($string, $limit) {
-        if (!is_string($string) || !is_int($limit)) {
-            throw new \Exception('$string must be a string and $limit an integer');
-        }else {
-            $length = mb_strlen($string);
-            if ($limit < $length) {
-                return true;
-            } else {
-                return false;
-            }
-        }
-    }
 
-    /**
-     * @param string $string
-     * @param int $limit
-     *
-     * @return bool
-     *
-     * @throws \Exception
-     */
+
     public static function lengthIsInferiorTo($string, $limit) {
         if (!is_string($string) || !is_int($limit)) {
             throw new \Exception('$string must be a string and $limit an integer');
