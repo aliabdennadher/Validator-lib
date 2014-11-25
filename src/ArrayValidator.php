@@ -10,7 +10,7 @@ namespace AB\ValidatorLib;
 
 /**
  * Class ArrayValidator
- * @package JB\Validator
+ * @package AB\ValidatorLib
  */
 class ArrayValidator
 {

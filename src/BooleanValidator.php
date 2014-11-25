@@ -11,11 +11,11 @@ namespace AB\ValidatorLib;
 
 /**
  * Class BooleanValidator
- * @package JB\Validator
+ * @package AB\ValidatorLib
  */
 /**
  * Class BooleanValidator
- * @package JB\Validator
+ * @package AB\ValidatorLib
  */
 class BooleanValidator
 {

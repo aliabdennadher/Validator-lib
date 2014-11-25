@@ -10,7 +10,7 @@ namespace AB\ValidatorLib;
 
 /**
  * Class IntegerValidator
- * @package JB\Validator
+ * @package AB\ValidatorLib
  */
 class IntegerValidator
 {

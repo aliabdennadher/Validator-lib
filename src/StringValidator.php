@@ -11,7 +11,7 @@ namespace AB\ValidatorLib;
 
 /**
  * Class StringValidator
- * @package JB\Validator
+ * @package AB\ValidatorLib
  */
 class StringValidator
 {
