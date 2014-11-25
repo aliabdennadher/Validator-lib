@@ -21,7 +21,7 @@ class ArrayValidator
      *
      * @throws \Exception
      */
-    public static function isEmpty($array){
+    public static function isEmpty($array) {
         if (!is_array($array)) {
             throw new \Exception('$array must be an array');
         }else {
