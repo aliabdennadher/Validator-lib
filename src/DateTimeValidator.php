@@ -11,16 +11,16 @@ namespace AB\Validator;
 
 class DateTimeValidator
 {
-    public static function isMajor($date) {
+    public static function isMajor() {
 
     }
-    public static function isMinor($date) {
+    public static function isMinor() {
 
     }
-    public static function isYear($date) {
+    public static function isYear() {
 
     }
-    public static function getTimeTo($date) {
+    public static function getTimeTo() {
 
     }
 } 

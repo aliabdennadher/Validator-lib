@@ -26,7 +26,7 @@ class BooleanValidator
         if (!is_bool($boolean)) {
             throw new \Exception('$boolean must be a boolean');
         }else {
-            if( filter_var($boolean, FILTER_VALIDATE_BOOLEAN) ) {
+            if(filter_var($boolean, FILTER_VALIDATE_BOOLEAN) ) {
                 return true;
             }else{
                 return false;

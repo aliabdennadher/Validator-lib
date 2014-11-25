@@ -26,7 +26,7 @@ class IntegerValidator
         if (!is_int($nb1) || !is_int($nb2)) {
             throw new \Exception('$nb1 and $nb2 must be integers');
         }else {
-            if ((int)$nb1 === (int)$nb2) {
+            if ((int) $nb1 === (int)$nb2) {
                 return true;
             } else {
                 return false;
@@ -42,11 +42,11 @@ class IntegerValidator
      *
      * @throws \Exception
      */
-    public static function isSuperior($nb1, $nb2){
+    public static function isSuperior($nb1, $nb2) {
         if (!is_int($nb1) || !is_int($nb2)) {
             throw new \Exception('$nb1 and $nb2 must be integers');
         }else {
-            if ((int)$nb1 > (int)$nb2) {
+            if ((int) $nb1 > (int)$nb2) {
                 return true;
             } else {
                 return false;
@@ -66,7 +66,7 @@ class IntegerValidator
         if (!is_int($nb1) || !is_int($nb2)) {
             throw new \Exception('$nb1 and $nb2 must be integers');
         }else {
-            if ((int)$nb1 < (int)$nb2) {
+            if ((int) $nb1 < (int)$nb2) {
                 return true;
             } else {
                 return false;
@@ -87,8 +87,8 @@ class IntegerValidator
         if (!is_int($nb) || !is_int($min) || !is_int($max)) {
             throw new \Exception('$nb, $min and $max must be integers');
         }else {
-            if ((int)$nb >= (int)$min) {
-                if ((int)$nb <= (int)$max) {
+            if ((int) $nb >= (int)$min) {
+                if ((int) $nb <= (int)$max) {
                     return true;
                 } else {
                     return false;
@@ -110,7 +110,7 @@ class IntegerValidator
         if (!is_int($nb)) {
             throw new \Exception('$nb must be an integer');
         }else {
-            if (0 >= (int)$nb) {
+            if (0 >= (int) $nb) {
                 return true;
             } else {
                 return false;
@@ -129,7 +129,7 @@ class IntegerValidator
         if (!is_int($nb)) {
             throw new \Exception('$nb must be an integer');
         }else {
-            if (0 <= (int)$nb) {
+            if (0 <= (int) $nb) {
                 return true;
             } else {
                 return false;
