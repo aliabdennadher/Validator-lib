@@ -14,7 +14,6 @@ namespace AB\Validator;
  */
 class ArrayValidator
 {
-
     /**
      * @param array $array
      *
@@ -41,7 +40,7 @@ class ArrayValidator
      *
      * @throws \Exception
      */
-    public static function numberElements($array){
+    public static function numberElements($array) {
         if (!is_array($array)) {
             throw new \Exception('$array must be an array');
         }else {
@@ -59,7 +58,7 @@ class ArrayValidator
      *
      * @throws \Exception
      */
-    public static function getElementsBetween($array, $from, $to){
+    public static function getElementsBetween($array, $from, $to) {
         if( !is_array($array) || !is_int($from) || !is_int($to)) {
             throw new \Exception('$array must be an array and $from, $to must be integer');
         }else {
@@ -83,7 +82,7 @@ class ArrayValidator
      *
      * @throws \Exception
      */
-    public static function keyExists($array, $key){
+    public static function keyExists($array, $key) {
         if( !is_array($array)) {
             throw new \Exception('$array must be an array');
         }else {
@@ -103,7 +102,7 @@ class ArrayValidator
      *
      *  @throws \Exception
      */
-    public static function valueExists($array, $value){
+    public static function valueExists($array, $value) {
         if( !is_array($array)) {
             throw new \Exception('$array must be an array');
         }else {
