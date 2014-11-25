@@ -51,7 +51,7 @@ class IntegerValidatorTest extends \PHPUnit_Framework_TestCase
         $b = 10;
         $expected = true;
 
-        $test = Validator\IntegerValidator::isInferior($a, $b);
+        $test = ValidatorLib\IntegerValidator::isInferior($a, $b);
 
         $this->assertEquals($expected, $test);
     }
@@ -66,7 +66,7 @@ class IntegerValidatorTest extends \PHPUnit_Framework_TestCase
         $nb = 5;
         $expected = true;
 
-        $test = Validator\IntegerValidator::isBetween($nb, $min, $max);
+        $test = ValidatorLib\IntegerValidator::isBetween($nb, $min, $max);
 
         $this->assertEquals($expected, $test);
     }
@@ -79,7 +79,7 @@ class IntegerValidatorTest extends \PHPUnit_Framework_TestCase
         $nb = -5;
         $expected = true;
 
-        $test = Validator\IntegerValidator::isNegative($nb);
+        $test = ValidatorLib\IntegerValidator::isNegative($nb);
 
         $this->assertEquals($expected, $test);
     }
@@ -92,7 +92,7 @@ class IntegerValidatorTest extends \PHPUnit_Framework_TestCase
         $nb = 5;
         $expected = true;
 
-        $test = Validator\IntegerValidator::isPositive($nb);
+        $test = ValidatorLib\IntegerValidator::isPositive($nb);
 
         $this->assertEquals($expected, $test);
     }
