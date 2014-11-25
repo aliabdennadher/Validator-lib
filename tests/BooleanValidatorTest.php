@@ -3,12 +3,12 @@
  * Created by PhpStorm.
  * User: Abdennadher
  * Date: 25/11/14
- * Time: 13:10
+ * Time: 10:12
  */
 
-namespace Tests\AB\ValidatorLib;
+namespace Tests\AB\Validator;
 
-use AB\ValidatorLib;
+use AB\Validator;
 
 /**
  * Class BooleanValidatorTest
@@ -22,7 +22,7 @@ class BooleanValidatorTest extends \PHPUnit_Framework_TestCase
     public function testIsTrue()
     {
         $boolean = true;
-        $test = ValidatorLib\BooleanValidator::isTrue($boolean);
+        $test = Validator\BooleanValidator::isTrue($boolean);
 
         $this->assertEquals($boolean, $test);
     }
@@ -33,7 +33,7 @@ class BooleanValidatorTest extends \PHPUnit_Framework_TestCase
     public function testIsFalse()
     {
         $boolean = false;
-        $test = ValidatorLib\BooleanValidator::isFalse($boolean);
+        $test = Validator\BooleanValidator::isFalse($boolean);
 
         $this->assertEquals(true, $test);
     }

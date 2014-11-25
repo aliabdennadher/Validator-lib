@@ -3,10 +3,10 @@
  * Created by PhpStorm.
  * User: Abdennadher
  * Date: 23/11/14
- * Time: 12:30
+ * Time: 00:52
  */
 
-namespace AB\ValidatorLib;
+namespace AB\Validator;
 
 
 class DateTimeValidator

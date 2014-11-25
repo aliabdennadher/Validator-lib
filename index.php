@@ -3,12 +3,12 @@
  * Created by PhpStorm.
  * User: Abdennadher
  * Date: 22/11/14
- * Time: 17:50
+ * Time: 16:50
  */
 
 require __DIR__.'/vendor/autoload.php';
 
-$test = 'allomonsieurmadame';
+$test = 'bwjawajnwi';
 
-$validation = \AB\ValidatorLib\StringValidator::noWhiteSpace($test);
+$validation = \AB\Validator\StringValidator::noWhiteSpace($test);
 var_dump($validation);

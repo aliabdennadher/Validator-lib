@@ -5,8 +5,8 @@
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "ABORT\\ValidatorLib\\": "src",
-            "Tests\\AB\\ValidatorLib\\": "tests"
+            "AB\\Validator\\": "src",
+            "Tests\\AB\\Validator\\": "tests"
         }
     },
     "config": {

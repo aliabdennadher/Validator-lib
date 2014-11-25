@@ -2,15 +2,15 @@
 /**
  * Created by PhpStorm.
  * User: Abdennadher
- * Date: 23/11/1417
- * 17:18
+ * Date: 22/11/14
+ * Time: 12:18
  */
 
-namespace AB\ValidatorLib;
+namespace AB\Validator;
 
 /**
  * Class IntegerValidator
- * @package AB\ValidatorLib
+ * @package AB\Validator
  */
 class IntegerValidator
 {
@@ -113,7 +113,7 @@ class IntegerValidator
     public static function isNegative($nb)
     {
         if (!is_int($nb)) {
-            throw new \Exception('$nb must be ');
+            throw new \Exception('$nb must be an integer');
         }else {
             if (0 >= (int)$nb) {
                 return true;
@@ -133,7 +133,7 @@ class IntegerValidator
     public static function isPositive($nb)
     {
         if (!is_int($nb)) {
-            throw new \Exception('$nb must be ');
+            throw new \Exception('$nb must be an integer');
         }else {
             if (0 <= (int)$nb) {
                 return true;

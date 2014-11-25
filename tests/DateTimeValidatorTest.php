@@ -3,12 +3,12 @@
  * Created by PhpStorm.
  * User: Abdennadher
  * Date: 25/11/14
- * Time: 13:12
+ * Time: 11:12
  */
 
-namespace Tests\AB\ValidatorLib;
+namespace Tests\AB\Validator;
 
-use AB\ValidatorLib;
+use AB\Validator;
 
 class DateTimeValidatorTest
 {

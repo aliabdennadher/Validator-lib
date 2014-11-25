@@ -3,14 +3,14 @@
  * Created by PhpStorm.
  * User: Abdennadher
  * Date: 23/11/14
- * Time: 15:50
+ * Time: 11:55
  */
 
-namespace AB\ValidatorLib;
+namespace AB\Validator;
 
 /**
  * Class ArrayValidator
- * @package AB\ValidatorLib
+ * @package AB\Validator
  */
 class ArrayValidator
 {
@@ -110,7 +110,7 @@ class ArrayValidator
     public static function valueExists($array, $value)
     {
         if( !is_array($array)) {
-            throw new \Exception('$array must be ');
+            throw new \Exception('$array must be an array');
         }else {
             if (in_array($value, $array)) {
                 return true;

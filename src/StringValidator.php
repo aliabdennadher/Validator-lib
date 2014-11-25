@@ -2,16 +2,16 @@
 /**
  * Created by PhpStorm.
  * User: Abdennadher
- * Date: 23/11/14
- * Time: 16:59
+ * Date: 22/11/14
+ * Time: 14:59
  */
 
-namespace AB\ValidatorLib;
+namespace JB\Validator;
 
 
 /**
  * Class StringValidator
- * @package AB\ValidatorLib
+ * @package AB\Validator
  */
 class StringValidator
 {

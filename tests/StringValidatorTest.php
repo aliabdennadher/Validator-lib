@@ -3,12 +3,12 @@
  * Created by PhpStorm.
  * User: Abdennadher
  * Date: 25/11/14
- * Time: 13:09
+ * Time: 21:09
  */
 
-namespace Tests\AB\ValidatorLib;
+namespace Tests\AB\Validator;
 
-use AB\ValidatorLib;
+use AB\Validator;
 
 class StringValidatorTest extends \PHPUnit_Framework_TestCase
 {
@@ -17,7 +17,7 @@ class StringValidatorTest extends \PHPUnit_Framework_TestCase
         $string = 'ceci est mon texte de test';
         $expected = mb_strlen($string);
 
-        $test = ValidatorLib\StringValidator::lengthIsEqualTo($string, $expected);
+        $test = Validator\StringValidator::lengthIsEqualTo($string, $expected);
         $this->assertTrue($test);
     }
     public function testLengthIsSuperiorTo()
@@ -25,7 +25,7 @@ class StringValidatorTest extends \PHPUnit_Framework_TestCase
         $string = 'test';
         $nb = 3;
 
-        $test = ValidatorLib\StringValidator::lengthIsSuperiorTo($string, $nb);
+        $test = Validator\StringValidator::lengthIsSuperiorTo($string, $nb);
         $this->assertTrue($test);
     }
     public function testLengthIsInferiorTo()
@@ -33,7 +33,7 @@ class StringValidatorTest extends \PHPUnit_Framework_TestCase
         $string = 'test';
         $nb = 10;
 
-        $test = ValidatorLib\StringValidator::lengthIsInferiorTo($string, $nb);
+        $test = Validator\StringValidator::lengthIsInferiorTo($string, $nb);
         $this->assertTrue($test);
     }
     public function testLengthBetween()
@@ -42,14 +42,14 @@ class StringValidatorTest extends \PHPUnit_Framework_TestCase
         $min = 1;
         $max = 10;
 
-        $test = ValidatorLib\StringValidator::lengthBetween($string, $min, $max);
+        $test = Validator\StringValidator::lengthBetween($string, $min, $max);
         $this->assertTrue($test);
     }
     public function testNoWhiteSpaceBeginAndEnd()
     {
         $string = 'No space';
 
-        $test = ValidatorLib\StringValidator::noWhiteSpaceBeginAndEnd($string);
+        $test = Validator\StringValidator::noWhiteSpaceBeginAndEnd($string);
 
         $this->assertTrue($test);
     }
@@ -57,7 +57,7 @@ class StringValidatorTest extends \PHPUnit_Framework_TestCase
     {
         $string = 'noSpaceHere';
 
-        $test = ValidatorLib\StringValidator::noWhiteSpace($string);
+        $test = Validator\StringValidator::noWhiteSpace($string);
 
         $this->assertTrue($test);
     }

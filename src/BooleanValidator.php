@@ -3,19 +3,15 @@
  * Created by PhpStorm.
  * User: Abdennadher
  * Date: 22/11/14
- * Time: 17:55
+ * Time: 13:28
  */
 
-namespace AB\ValidatorLib;
+namespace AB\Validator;
 
 
 /**
  * Class BooleanValidator
- * @package AB\ValidatorLib
- */
-/**
- * Class BooleanValidator
- * @package AB\ValidatorLib
+ * @package AB\Validator
  */
 class BooleanValidator
 {
@@ -29,7 +25,7 @@ class BooleanValidator
     public static function isTrue($boolean)
     {
         if (!is_bool($boolean)) {
-            throw new \Exception('$boolean must be ');
+            throw new \Exception('$boolean must be a boolean');
         }else {
             if( filter_var($boolean, FILTER_VALIDATE_BOOLEAN) ) {
                 return true;
@@ -49,7 +45,7 @@ class BooleanValidator
     public static function isFalse($boolean)
     {
         if (!is_bool($boolean)) {
-            throw new \Exception('$boolean must be ');
+            throw new \Exception('$boolean must be a boolean');
         }else {
             if (!filter_var($boolean, FILTER_VALIDATE_BOOLEAN, ['flags' => FILTER_NULL_ON_FAILURE])) {
                 return true;

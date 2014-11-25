@@ -2,13 +2,13 @@
 /**
  * Created by PhpStorm.
  * User: Abdennadher
- * Date: 25/11/14
- * Time: 13:11
+ * Date: 24/11/14
+ * Time: 09:11
  */
 
-namespace Tests\AB\ValidatorLib;
+namespace Tests\AB\Validator;
 
-use AB\ValidatorLib;
+use AB\Validator;
 
 class ArrayValidatorTest extends \PHPUnit_Framework_TestCase
 {
@@ -16,7 +16,7 @@ class ArrayValidatorTest extends \PHPUnit_Framework_TestCase
     {
         $array = array();
 
-        $test = ValidatorLib\ArrayValidator::isEmpty($array);
+        $test = Validator\ArrayValidator::isEmpty($array);
 
         $this->assertTrue($test);
     }
@@ -25,7 +25,7 @@ class ArrayValidatorTest extends \PHPUnit_Framework_TestCase
         $array = array('item1', 'item2', 'item3');
         $expected = 3;
 
-        $test = ValidatorLib\ArrayValidator::numberElements($array);
+        $test = Validator\ArrayValidator::numberElements($array);
 
         $this->assertEquals($expected, $test);
     }
@@ -34,7 +34,7 @@ class ArrayValidatorTest extends \PHPUnit_Framework_TestCase
         $array = array('key1' => 'item1', 'key2' => 'item2');
         $key = 'key2';
 
-        $test = ValidatorLib\ArrayValidator::keyExists($array, $key);
+        $test = Validator\ArrayValidator::keyExists($array, $key);
 
         $this->assertTrue($test);
     }
@@ -43,7 +43,7 @@ class ArrayValidatorTest extends \PHPUnit_Framework_TestCase
         $array = array('key1' => 'item1', 'key2' => 'item2');
         $value = 'item1';
 
-        $test = ValidatorLib\ArrayValidator::valueExists($array, $value);
+        $test = Validator\ArrayValidator::valueExists($array, $value);
 
         $this->assertTrue($test);
     }

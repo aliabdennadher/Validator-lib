@@ -3,16 +3,16 @@
  * Created by PhpStorm.
  * User: Abdennadher
  * Date: 25/11/14
- * Time: 13:00
+ * Time: 09:00
  */
 
-namespace Tests\AB\ValidatorLib;
+namespace Tests\AB\Validator;
 
-use AB\ValidatorLib;
+use AB\Validator;
 
 /**
  * Class IntegerValidatorTest
- * @package Tests\JB\Validator
+ * @package Tests\AB\Validator
  */
 class IntegerValidatorTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,7 +23,7 @@ class IntegerValidatorTest extends \PHPUnit_Framework_TestCase
     {
         $a = $b = 2;
         $expected = true;
-        $test = ValidatorLib\IntegerValidator::isEqual($a, $b);
+        $test = Validator\IntegerValidator::isEqual($a, $b);
 
         $this->assertEquals($expected, $test);
     }
@@ -37,7 +37,7 @@ class IntegerValidatorTest extends \PHPUnit_Framework_TestCase
         $b = 5;
         $expected = true;
 
-        $test = ValidatorLib\IntegerValidator::isSuperior($a, $b);
+        $test = Validator\IntegerValidator::isSuperior($a, $b);
 
         $this->assertEquals($expected, $test);
     }
@@ -51,7 +51,7 @@ class IntegerValidatorTest extends \PHPUnit_Framework_TestCase
         $b = 10;
         $expected = true;
 
-        $test = ValidatorLib\IntegerValidator::isInferior($a, $b);
+        $test = Validator\IntegerValidator::isInferior($a, $b);
 
         $this->assertEquals($expected, $test);
     }
@@ -66,7 +66,7 @@ class IntegerValidatorTest extends \PHPUnit_Framework_TestCase
         $nb = 5;
         $expected = true;
 
-        $test = ValidatorLib\IntegerValidator::isBetween($nb, $min, $max);
+        $test = Validator\IntegerValidator::isBetween($nb, $min, $max);
 
         $this->assertEquals($expected, $test);
     }
@@ -79,7 +79,7 @@ class IntegerValidatorTest extends \PHPUnit_Framework_TestCase
         $nb = -5;
         $expected = true;
 
-        $test = ValidatorLib\IntegerValidator::isNegative($nb);
+        $test = Validator\IntegerValidator::isNegative($nb);
 
         $this->assertEquals($expected, $test);
     }
@@ -92,7 +92,7 @@ class IntegerValidatorTest extends \PHPUnit_Framework_TestCase
         $nb = 5;
         $expected = true;
 
-        $test = ValidatorLib\IntegerValidator::isPositive($nb);
+        $test = Validator\IntegerValidator::isPositive($nb);
 
         $this->assertEquals($expected, $test);
     }
