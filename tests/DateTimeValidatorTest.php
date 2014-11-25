@@ -6,9 +6,9 @@
  * Time: 13:12
  */
 
-namespace Tests\JB\Validator;
+namespace Tests\AB\ValidatorLib;
 
-use JB\Validator;
+use AB\ValidatorLib;
 
 class DateTimeValidatorTest
 {

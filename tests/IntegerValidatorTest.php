@@ -6,9 +6,9 @@
  * Time: 13:00
  */
 
-namespace Tests\JB\Validator;
+namespace Tests\AB\ValidatorLib;
 
-use JB\Validator;
+use AB\ValidatorLib;
 
 /**
  * Class IntegerValidatorTest
@@ -23,7 +23,7 @@ class IntegerValidatorTest extends \PHPUnit_Framework_TestCase
     {
         $a = $b = 2;
         $expected = true;
-        $test = Validator\IntegerValidator::isEqual($a, $b);
+        $test = ValidatorLib\IntegerValidator::isEqual($a, $b);
 
         $this->assertEquals($expected, $test);
     }
@@ -37,7 +37,7 @@ class IntegerValidatorTest extends \PHPUnit_Framework_TestCase
         $b = 5;
         $expected = true;
 
-        $test = Validator\IntegerValidator::isSuperior($a, $b);
+        $test = ValidatorLib\IntegerValidator::isSuperior($a, $b);
 
         $this->assertEquals($expected, $test);
     }

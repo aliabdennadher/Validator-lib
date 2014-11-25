@@ -6,7 +6,7 @@
  * Time: 12:30
  */
 
-namespace JB\Validator;
+namespace AB\ValidatorLib;
 
 
 class DateTimeValidator

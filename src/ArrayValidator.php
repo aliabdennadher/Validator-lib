@@ -6,7 +6,7 @@
  * Time: 15:50
  */
 
-namespace JB\Validator;
+namespace AB\ValidatorLib;
 
 /**
  * Class ArrayValidator
@@ -110,7 +110,7 @@ class ArrayValidator
     public static function valueExists($array, $value)
     {
         if( !is_array($array)) {
-            throw new \Exception('$array must be an array');
+            throw new \Exception('$array must be ');
         }else {
             if (in_array($value, $array)) {
                 return true;

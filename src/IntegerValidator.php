@@ -6,7 +6,7 @@
  * 17:18
  */
 
-namespace JB\Validator;
+namespace AB\ValidatorLib;
 
 /**
  * Class IntegerValidator

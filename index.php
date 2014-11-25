@@ -8,7 +8,7 @@
 
 require __DIR__.'/vendor/autoload.php';
 
-$test = 'machainecestsa';
+$test = 'allomonsieurmadame';
 
 $validation = \JB\Validator\StringValidator::noWhiteSpace($test);
 var_dump($validation);

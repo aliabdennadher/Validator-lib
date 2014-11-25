@@ -6,7 +6,7 @@
  * Time: 17:55
  */
 
-namespace JB\Validator;
+namespace AB\ValidatorLib;
 
 
 /**
@@ -29,7 +29,7 @@ class BooleanValidator
     public static function isTrue($boolean)
     {
         if (!is_bool($boolean)) {
-            throw new \Exception('$boolean must be a boolean');
+            throw new \Exception('$boolean must be ');
         }else {
             if( filter_var($boolean, FILTER_VALIDATE_BOOLEAN) ) {
                 return true;

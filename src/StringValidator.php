@@ -6,7 +6,7 @@
  * Time: 16:59
  */
 
-namespace JB\Validator;
+namespace AB\ValidatorLib;
 
 
 /**

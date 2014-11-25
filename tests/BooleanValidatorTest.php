@@ -6,9 +6,9 @@
  * Time: 13:10
  */
 
-namespace Tests\JB\Validator;
+namespace Tests\AB\ValidatorLib;
 
-use JB\Validator;
+use AB\ValidatorLib;
 
 /**
  * Class BooleanValidatorTest
@@ -22,7 +22,7 @@ class BooleanValidatorTest extends \PHPUnit_Framework_TestCase
     public function testIsTrue()
     {
         $boolean = true;
-        $test = Validator\BooleanValidator::isTrue($boolean);
+        $test = ValidatorLib\BooleanValidator::isTrue($boolean);
 
         $this->assertEquals($boolean, $test);
     }
@@ -33,7 +33,7 @@ class BooleanValidatorTest extends \PHPUnit_Framework_TestCase
     public function testIsFalse()
     {
         $boolean = false;
-        $test = Validator\BooleanValidator::isFalse($boolean);
+        $test = ValidatorLib\BooleanValidator::isFalse($boolean);
 
         $this->assertEquals(true, $test);
     }

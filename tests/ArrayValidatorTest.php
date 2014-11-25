@@ -6,9 +6,9 @@
  * Time: 13:11
  */
 
-namespace Tests\JB\Validator;
+namespace Tests\AB\ValidatorLib;
 
-use JB\Validator;
+use AB\ValidatorLib;
 
 class ArrayValidatorTest extends \PHPUnit_Framework_TestCase
 {
@@ -16,7 +16,7 @@ class ArrayValidatorTest extends \PHPUnit_Framework_TestCase
     {
         $array = array();
 
-        $test = Validator\ArrayValidator::isEmpty($array);
+        $test = ValidatorLib\ArrayValidator::isEmpty($array);
 
         $this->assertTrue($test);
     }
@@ -25,7 +25,7 @@ class ArrayValidatorTest extends \PHPUnit_Framework_TestCase
         $array = array('item1', 'item2', 'item3');
         $expected = 3;
 
-        $test = Validator\ArrayValidator::numberElements($array);
+        $test = ValidatorLib\ArrayValidator::numberElements($array);
 
         $this->assertEquals($expected, $test);
     }
@@ -34,7 +34,7 @@ class ArrayValidatorTest extends \PHPUnit_Framework_TestCase
         $array = array('key1' => 'item1', 'key2' => 'item2');
         $key = 'key2';
 
-        $test = Validator\ArrayValidator::keyExists($array, $key);
+        $test = ValidatorLib\ArrayValidator::keyExists($array, $key);
 
         $this->assertTrue($test);
     }
@@ -43,7 +43,7 @@ class ArrayValidatorTest extends \PHPUnit_Framework_TestCase
         $array = array('key1' => 'item1', 'key2' => 'item2');
         $value = 'item1';
 
-        $test = Validator\ArrayValidator::valueExists($array, $value);
+        $test = ValidatorLib\ArrayValidator::valueExists($array, $value);
 
         $this->assertTrue($test);
     }
